@@ -6,4 +6,5 @@ target 'PawPal' do
   # Pods for PawPal
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
+  pod 'GoogleSignIn'
 end
