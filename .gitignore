@@ -130,3 +130,7 @@ fastlane/test_output
 iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,swift,cocoapods
+
+# Sensitive files and extra config files
+GoogleService-Info.plist
+Secrets.plist
