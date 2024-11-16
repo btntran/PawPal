@@ -20,41 +20,54 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {
-        if let email = emailTextField.text, let password = passwordTextField.text {
-            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-                if let e = error {
-                    print(e)
-                } else {
-                    self.performSegue(withIdentifier: "LoginToHome", sender: self)
-                }
+        guard let email = emailTextField.text, !email.isEmpty,
+              let password = passwordTextField.text, !password.isEmpty else {
+            print("Error: Email or password field is empty.")
+            // Optionally, display an alert to the user
+            return
+        }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            if let error = error {
+                print("Email/password login failed: \(error.localizedDescription)")
+                return
             }
+            
+            print("Login successful for user: \(authResult?.user.email ?? "No email")")
+            self.performSegue(withIdentifier: "LoginToHome", sender: self)
         }
     }
     
     @IBAction func googleLoginPressed(_ sender: UIButton) {
-        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        guard let clientID = FirebaseApp.app()?.options.clientID else {
+            print("Error: Firebase clientID is missing.")
+            return
+        }
         
         let config = GIDConfiguration(clientID: clientID)
-        
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { [weak self] result, error in
             guard let self = self else { return }
+            
             if let error = error {
-                print("Google sign-in failed: \(error)")
+                print("Google sign-in error: \(error.localizedDescription)")
                 return
             }
             
-            guard let authentication = result?.user.idToken?.tokenString,
-                  let accessToken = result?.user.accessToken.tokenString else { return }
+            guard let idToken = result?.user.idToken?.tokenString,
+                  let accessToken = result?.user.accessToken.tokenString else {
+                print("Google sign-in failed: Missing tokens.")
+                return
+            }
             
-            let credential = GoogleAuthProvider.credential(withIDToken: authentication,
-                                                           accessToken: accessToken)
-            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
             Auth.auth().signIn(with: credential) { authResult, error in
                 if let error = error {
-                    print("Firebase sign-in failed: \(error)")
-                } else {
-                    self.performSegue(withIdentifier: "LoginToHome", sender: self)
+                    print("Firebase Google sign-in failed: \(error.localizedDescription)")
+                    return
                 }
+                
+                print("Google login successful for user: \(authResult?.user.email ?? "No email")")
+                self.performSegue(withIdentifier: "LoginToHome", sender: self)
             }
         }
     }
