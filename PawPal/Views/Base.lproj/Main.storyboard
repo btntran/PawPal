@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6TM-pe-AMW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6TM-pe-AMW">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -221,13 +221,14 @@
                         <segue destination="5Nm-MP-Kyz" kind="relationship" relationship="viewControllers" id="wZG-Rb-c7j"/>
                         <segue destination="APa-Nn-hRY" kind="relationship" relationship="viewControllers" id="CGB-FI-sAE"/>
                         <segue destination="qjA-9Q-QIx" kind="relationship" relationship="viewControllers" id="S7z-ht-Tur"/>
+                        <segue destination="rjM-WO-Z4L" kind="relationship" relationship="viewControllers" id="GKu-hc-Cnr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAd-N7-cpw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3760" y="144"/>
         </scene>
-        <!--Map-->
+        <!--Locate-->
         <scene sceneID="DqY-Au-iTt">
             <objects>
                 <viewController id="APa-Nn-hRY" customClass="MapViewController" customModule="PawPal" customModuleProvider="target" sceneMemberID="viewController">
@@ -235,8 +236,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4q-jm-jCv">
-                                <rect key="frame" x="104" y="381" width="188" height="101"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google Map Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4q-jm-jCv">
+                                <rect key="frame" x="104" y="381" width="198" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -246,13 +247,38 @@
                         <viewLayoutGuide key="safeArea" id="Ibi-on-70I"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="mappin" catalog="system" id="PHu-kN-DhY"/>
+                    <tabBarItem key="tabBarItem" title="Locate" image="magnifyingglass" catalog="system" id="PHu-kN-DhY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSt-VL-6ad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5096.9465648854957" y="-573.23943661971839"/>
         </scene>
-        <!--Camera-->
+        <!--Profile-->
+        <scene sceneID="aga-kL-KIN">
+            <objects>
+                <viewController id="rjM-WO-Z4L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tf2-bV-aoq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qo-Cs-GUN">
+                                <rect key="frame" x="132" y="345" width="191" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="koM-E7-lXY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle.fill" catalog="system" id="7NW-o5-sLj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uti-1n-tIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5045.0381679389311" y="1773.2394366197184"/>
+        </scene>
+        <!--Communication-->
         <scene sceneID="vJx-9a-3Wi">
             <objects>
                 <viewController id="qjA-9Q-QIx" customClass="CameraViewController" customModule="PawPal" customModuleProvider="target" sceneMemberID="viewController">
@@ -260,8 +286,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Camera Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ock-EN-Kji">
-                                <rect key="frame" x="121" y="410" width="167" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Communication Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ock-EN-Kji">
+                                <rect key="frame" x="63" y="409" width="267" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
@@ -271,22 +297,23 @@
                         <viewLayoutGuide key="safeArea" id="ivR-sO-Fnx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" image="camera.fill" catalog="system" id="ZAc-dE-lOJ"/>
+                    <tabBarItem key="tabBarItem" title="Communication" image="message.fill" catalog="system" id="ZAc-dE-lOJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQH-1n-N9T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5096.9465648854957" y="935.91549295774655"/>
+            <point key="canvasLocation" x="5097" y="851"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="75D-pe-6h5"/>
+        <segue reference="Uku-eJ-gMW"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
-        <image name="mappin" catalog="system" width="106" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
