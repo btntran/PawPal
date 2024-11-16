@@ -19,7 +19,6 @@
 		9BC1BC412CBAF3EB00F1DD8E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1BC402CBAF3EB00F1DD8E /* RegisterViewController.swift */; };
 		9BC1BC432CBAF3F800F1DD8E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1BC422CBAF3F800F1DD8E /* HomeViewController.swift */; };
 		9BC2999A2CBAFAB9006BA3C9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC299992CBAFAB9006BA3C9 /* WelcomeViewController.swift */; };
-		B58E03E951E0DCF4D68D4FBB /* Pods_PawPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE6B11A1AD9FA74B2D895BD /* Pods_PawPal.framework */; };
 		BAB95B6B2CE94D78000FB13F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAB95B6A2CE94D78000FB13F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58E03E951E0DCF4D68D4FBB /* Pods_PawPal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
