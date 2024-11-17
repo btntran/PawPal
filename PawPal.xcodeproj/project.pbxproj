@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B165F3A2CBB3FF400BC8DB2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B165F392CBB3FF300BC8DB2 /* CameraViewController.swift */; };
+		9B165F3A2CBB3FF400BC8DB2 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B165F392CBB3FF300BC8DB2 /* CommunityViewController.swift */; };
 		9B165F3C2CBB40B200BC8DB2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B165F3B2CBB40B200BC8DB2 /* MapViewController.swift */; };
+		9B5006602CE98C48003297DD /* CommunityTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B50065F2CE98C48003297DD /* CommunityTableCell.xib */; };
+		9B5006612CE98C48003297DD /* CommunityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B50065E2CE98C48003297DD /* CommunityTableCell.swift */; };
 		9BC1BC222CBAE7E200F1DD8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1BC212CBAE7E200F1DD8E /* AppDelegate.swift */; };
 		9BC1BC242CBAE7E200F1DD8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1BC232CBAE7E200F1DD8E /* SceneDelegate.swift */; };
 		9BC1BC262CBAE7E200F1DD8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1BC252CBAE7E200F1DD8E /* ViewController.swift */; };
@@ -23,8 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B165F392CBB3FF300BC8DB2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9B165F392CBB3FF300BC8DB2 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		9B165F3B2CBB40B200BC8DB2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9B50065E2CE98C48003297DD /* CommunityTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTableCell.swift; sourceTree = "<group>"; };
+		9B50065F2CE98C48003297DD /* CommunityTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityTableCell.xib; sourceTree = "<group>"; };
 		9BC1BC1E2CBAE7E200F1DD8E /* PawPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC1BC212CBAE7E200F1DD8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BC1BC232CBAE7E200F1DD8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,15 @@
 				BAC1F5E335E2CE1ED849DE2A /* Pods-PawPal.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B50065D2CE98C22003297DD /* CommunityTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9B50065E2CE98C48003297DD /* CommunityTableCell.swift */,
+				9B50065F2CE98C48003297DD /* CommunityTableCell.xib */,
+			);
+			path = CommunityTableViewCell;
 			sourceTree = "<group>";
 		};
 		9BC1BC152CBAE7E200F1DD8E = {
@@ -107,6 +120,7 @@
 		9BC1BC362CBAE8C600F1DD8E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B50065D2CE98C22003297DD /* CommunityTableViewCell */,
 				9BC1BC272CBAE7E200F1DD8E /* Main.storyboard */,
 			);
 			path = Views;
@@ -120,7 +134,7 @@
 				9BC1BC402CBAF3EB00F1DD8E /* RegisterViewController.swift */,
 				9BC1BC422CBAF3F800F1DD8E /* HomeViewController.swift */,
 				9BC299992CBAFAB9006BA3C9 /* WelcomeViewController.swift */,
-				9B165F392CBB3FF300BC8DB2 /* CameraViewController.swift */,
+				9B165F392CBB3FF300BC8DB2 /* CommunityViewController.swift */,
 				9B165F3B2CBB40B200BC8DB2 /* MapViewController.swift */,
 			);
 			path = Controllers;
@@ -201,6 +215,7 @@
 				BAB95B6B2CE94D78000FB13F /* GoogleService-Info.plist in Resources */,
 				9BC1BC2E2CBAE7E300F1DD8E /* Base in Resources */,
 				9BC1BC292CBAE7E200F1DD8E /* Base in Resources */,
+				9B5006602CE98C48003297DD /* CommunityTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,9 +272,10 @@
 				9BC1BC412CBAF3EB00F1DD8E /* RegisterViewController.swift in Sources */,
 				9BC1BC262CBAE7E200F1DD8E /* ViewController.swift in Sources */,
 				9BC1BC222CBAE7E200F1DD8E /* AppDelegate.swift in Sources */,
+				9B5006612CE98C48003297DD /* CommunityTableCell.swift in Sources */,
 				9B165F3C2CBB40B200BC8DB2 /* MapViewController.swift in Sources */,
 				9BC1BC242CBAE7E200F1DD8E /* SceneDelegate.swift in Sources */,
-				9B165F3A2CBB3FF400BC8DB2 /* CameraViewController.swift in Sources */,
+				9B165F3A2CBB3FF400BC8DB2 /* CommunityViewController.swift in Sources */,
 				9BC1BC432CBAF3F800F1DD8E /* HomeViewController.swift in Sources */,
 				9BC2999A2CBAFAB9006BA3C9 /* WelcomeViewController.swift in Sources */,
 			);

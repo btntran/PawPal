@@ -281,15 +281,11 @@
         <!--Community-->
         <scene sceneID="vJx-9a-3Wi">
             <objects>
-                <viewController id="qjA-9Q-QIx" customClass="CameraViewController" customModule="PawPal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qjA-9Q-QIx" customClass="CommunityViewController" customModule="PawPal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qkr-lP-VOw">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="avQ-2Q-7ez">
-                                <rect key="frame" x="0.0" y="229" width="428" height="614"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1eG-tV-sl0">
                                 <rect key="frame" x="0.0" y="91" width="428" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -357,6 +353,10 @@
                                     <constraint firstAttribute="height" constant="30" id="1Fc-hf-InK"/>
                                 </constraints>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="avQ-2Q-7ez">
+                                <rect key="frame" x="0.0" y="229" width="428" height="614"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ivR-sO-Fnx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -376,6 +376,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Community" image="message.fill" catalog="system" id="ZAc-dE-lOJ"/>
+                    <connections>
+                        <outlet property="listView" destination="avQ-2Q-7ez" id="mzH-Ur-KAF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQH-1n-N9T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -391,7 +394,7 @@
         <image name="message.fill" catalog="system" width="128" height="114"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
