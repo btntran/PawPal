@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6TM-pe-AMW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6TM-pe-AMW">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -261,16 +261,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qo-Cs-GUN">
-                                <rect key="frame" x="132" y="345" width="191" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Pet Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qo-Cs-GUN">
+                                <rect key="frame" x="29" y="114" width="191" height="35"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 6" translatesAutoresizingMaskIntoConstraints="NO" id="5ss-P8-tZe">
+                                <rect key="frame" x="0.0" y="192" width="393" height="321"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Setting_line" translatesAutoresizingMaskIntoConstraints="NO" id="afV-Cz-Jah">
+                                <rect key="frame" x="337" y="116" width="31" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="koM-E7-lXY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Qo-Cs-GUN" firstAttribute="top" secondItem="koM-E7-lXY" secondAttribute="top" constant="11" id="6Ee-CU-yxc"/>
+                            <constraint firstItem="koM-E7-lXY" firstAttribute="trailing" secondItem="1Qo-Cs-GUN" secondAttribute="trailing" constant="173" id="84R-LT-j3t"/>
+                            <constraint firstItem="5ss-P8-tZe" firstAttribute="leading" secondItem="koM-E7-lXY" secondAttribute="leading" id="IzY-As-QYV"/>
+                            <constraint firstItem="koM-E7-lXY" firstAttribute="bottom" secondItem="5ss-P8-tZe" secondAttribute="bottom" constant="256" id="QB2-ms-Q4b"/>
+                            <constraint firstItem="koM-E7-lXY" firstAttribute="bottom" secondItem="1Qo-Cs-GUN" secondAttribute="bottom" constant="620" id="TML-M4-I4B"/>
+                            <constraint firstItem="5ss-P8-tZe" firstAttribute="trailing" secondItem="koM-E7-lXY" secondAttribute="trailing" id="b9f-gB-fgt"/>
+                            <constraint firstItem="1Qo-Cs-GUN" firstAttribute="leading" secondItem="koM-E7-lXY" secondAttribute="leading" constant="29" id="csR-aQ-IDO"/>
+                            <constraint firstItem="5ss-P8-tZe" firstAttribute="top" secondItem="1Qo-Cs-GUN" secondAttribute="bottom" constant="43" id="sHF-9q-fWz"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle.fill" catalog="system" id="7NW-o5-sLj"/>
                 </viewController>
@@ -308,6 +324,8 @@
         <segue reference="Uku-eJ-gMW"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Rectangle 6" width="328" height="339"/>
+        <image name="Setting_line" width="10" height="10"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>
