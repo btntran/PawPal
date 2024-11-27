@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		9BC1BC412CBAF3EB00F1DD8E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1BC402CBAF3EB00F1DD8E /* RegisterViewController.swift */; };
 		9BC1BC432CBAF3F800F1DD8E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1BC422CBAF3F800F1DD8E /* HomeViewController.swift */; };
 		9BC2999A2CBAFAB9006BA3C9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC299992CBAFAB9006BA3C9 /* WelcomeViewController.swift */; };
+		BA682A5B2CF64A870065E683 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA682A5A2CF64A870065E683 /* Post.swift */; };
 		BAB95B6B2CE94D78000FB13F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAB95B6A2CE94D78000FB13F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -37,11 +38,27 @@
 		9BC1BC402CBAF3EB00F1DD8E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9BC1BC422CBAF3F800F1DD8E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9BC299992CBAFAB9006BA3C9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BA682A5A2CF64A870065E683 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Post.swift; path = PawPal/Post.swift; sourceTree = SOURCE_ROOT; };
 		BAB95B6A2CE94D78000FB13F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAC1F5E335E2CE1ED849DE2A /* Pods-PawPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawPal.release.xcconfig"; path = "Target Support Files/Pods-PawPal/Pods-PawPal.release.xcconfig"; sourceTree = "<group>"; };
 		D107B905FDB9CA7E43E2F603 /* Pods-PawPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawPal.debug.xcconfig"; path = "Target Support Files/Pods-PawPal/Pods-PawPal.debug.xcconfig"; sourceTree = "<group>"; };
 		DDE6B11A1AD9FA74B2D895BD /* Pods_PawPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BA682A702CF65B820065E683 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Cells/PostCell.swift,
+				Cells/PostCell.xib,
+			);
+			target = 9BC1BC1D2CBAE7E200F1DD8E /* PawPal */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BA682A5C2CF64B220065E683 /* HomePage */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BA682A702CF65B820065E683 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = HomePage; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9BC1BC1B2CBAE7E200F1DD8E /* Frameworks */ = {
@@ -100,6 +117,7 @@
 		9BC1BC352CBAE88C00F1DD8E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BA682A5A2CF64A870065E683 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -107,6 +125,7 @@
 		9BC1BC362CBAE8C600F1DD8E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BA682A5C2CF64B220065E683 /* HomePage */,
 				9BC1BC272CBAE7E200F1DD8E /* Main.storyboard */,
 			);
 			path = Views;
@@ -262,6 +281,7 @@
 				9B165F3A2CBB3FF400BC8DB2 /* CameraViewController.swift in Sources */,
 				9BC1BC432CBAF3F800F1DD8E /* HomeViewController.swift in Sources */,
 				9BC2999A2CBAFAB9006BA3C9 /* WelcomeViewController.swift in Sources */,
+				BA682A5B2CF64A870065E683 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
