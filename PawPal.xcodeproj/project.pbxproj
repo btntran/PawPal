@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1565152CFC39160030B6C1 /* Community.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1565142CFC39160030B6C1 /* Community.storyboard */; };
+		9B1565172CFC3A2E0030B6C1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1565162CFC3A2E0030B6C1 /* Home.storyboard */; };
+		9B1565192CFC3B190030B6C1 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1565182CFC3B190030B6C1 /* Profile.storyboard */; };
+		9B15651B2CFC3C710030B6C1 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B15651A2CFC3C710030B6C1 /* Map.storyboard */; };
 		9B165F3A2CBB3FF400BC8DB2 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B165F392CBB3FF300BC8DB2 /* CommunityViewController.swift */; };
 		9B165F3C2CBB40B200BC8DB2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B165F3B2CBB40B200BC8DB2 /* MapViewController.swift */; };
 		9B5006602CE98C48003297DD /* CommunityTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B50065F2CE98C48003297DD /* CommunityTableCell.xib */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B1565142CFC39160030B6C1 /* Community.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Community.storyboard; sourceTree = "<group>"; };
+		9B1565162CFC3A2E0030B6C1 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		9B1565182CFC3B190030B6C1 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		9B15651A2CFC3C710030B6C1 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		9B165F392CBB3FF300BC8DB2 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		9B165F3B2CBB40B200BC8DB2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9B50065E2CE98C48003297DD /* CommunityTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTableCell.swift; sourceTree = "<group>"; };
@@ -76,6 +84,39 @@
 			path = CommunityTableViewCell;
 			sourceTree = "<group>";
 		};
+		9B9720942CFD096400AED15E /* CommunityView */ = {
+			isa = PBXGroup;
+			children = (
+				9B50065D2CE98C22003297DD /* CommunityTableViewCell */,
+				9B1565142CFC39160030B6C1 /* Community.storyboard */,
+			);
+			path = CommunityView;
+			sourceTree = "<group>";
+		};
+		9B9720962CFD098200AED15E /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				9B1565162CFC3A2E0030B6C1 /* Home.storyboard */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		9B9720972CFD09AC00AED15E /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				9B1565182CFC3B190030B6C1 /* Profile.storyboard */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		9B9720982CFD09B200AED15E /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				9B15651A2CFC3C710030B6C1 /* Map.storyboard */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 		9BC1BC152CBAE7E200F1DD8E = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +144,6 @@
 				9BC1BC352CBAE88C00F1DD8E /* Models */,
 				9BC1BC372CBAE8F800F1DD8E /* Controllers */,
 				9BC1BC2A2CBAE7E300F1DD8E /* Assets.xcassets */,
-				9BC1BC2C2CBAE7E300F1DD8E /* LaunchScreen.storyboard */,
 				9BC1BC2F2CBAE7E300F1DD8E /* Info.plist */,
 				BAB95B6A2CE94D78000FB13F /* GoogleService-Info.plist */,
 			);
@@ -120,8 +160,12 @@
 		9BC1BC362CBAE8C600F1DD8E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9B50065D2CE98C22003297DD /* CommunityTableViewCell */,
+				9BC1BC2C2CBAE7E300F1DD8E /* LaunchScreen.storyboard */,
+				9B9720942CFD096400AED15E /* CommunityView */,
 				9BC1BC272CBAE7E200F1DD8E /* Main.storyboard */,
+				9B9720962CFD098200AED15E /* HomeView */,
+				9B9720972CFD09AC00AED15E /* ProfileView */,
+				9B9720982CFD09B200AED15E /* MapView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,11 +255,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1565172CFC3A2E0030B6C1 /* Home.storyboard in Resources */,
 				9BC1BC2B2CBAE7E300F1DD8E /* Assets.xcassets in Resources */,
+				9B15651B2CFC3C710030B6C1 /* Map.storyboard in Resources */,
+				9B1565192CFC3B190030B6C1 /* Profile.storyboard in Resources */,
 				BAB95B6B2CE94D78000FB13F /* GoogleService-Info.plist in Resources */,
 				9BC1BC2E2CBAE7E300F1DD8E /* Base in Resources */,
 				9BC1BC292CBAE7E200F1DD8E /* Base in Resources */,
 				9B5006602CE98C48003297DD /* CommunityTableCell.xib in Resources */,
+				9B1565152CFC39160030B6C1 /* Community.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
