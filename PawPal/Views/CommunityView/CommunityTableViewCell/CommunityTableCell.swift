@@ -33,11 +33,11 @@ class CommunityTableCell: UITableViewCell {
         self.cellDescription.text = description
     }
     
-    func setNumComment(numComment: String){
-        self.cellNumComment.text = numComment
+    func setNumComment(numComment: Int){
+        self.cellNumComment.text = String(numComment)
     }
     
-    func setNumReaction(numReaction: String){
-        self.cellNumReaction.text = numReaction
+    func setNumReaction(numReaction: Int){
+        self.cellNumReaction.text = String(numReaction)
     }
 }
