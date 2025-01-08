@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		9BC1BC412CBAF3EB00F1DD8E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1BC402CBAF3EB00F1DD8E /* RegisterViewController.swift */; };
 		9BC1BC432CBAF3F800F1DD8E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1BC422CBAF3F800F1DD8E /* HomeViewController.swift */; };
 		9BC2999A2CBAFAB9006BA3C9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC299992CBAFAB9006BA3C9 /* WelcomeViewController.swift */; };
+		AEFAFFCF29BD0FD1A9661B58 /* Pods_PawPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE6B11A1AD9FA74B2D895BD /* Pods_PawPal.framework */; };
 		BA682A5B2CF64A870065E683 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA682A5A2CF64A870065E683 /* Post.swift */; };
 		BAB95B6B2CE94D78000FB13F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAB95B6A2CE94D78000FB13F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -46,7 +47,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BA682A702CF65B820065E683 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		BA682A702CF65B820065E683 /* Exceptions for "HomePage" folder in "PawPal" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Cells/PostCell.swift,
@@ -57,7 +58,18 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BA682A5C2CF64B220065E683 /* HomePage */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BA682A702CF65B820065E683 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = HomePage; sourceTree = "<group>"; };
+		BA682A5C2CF64B220065E683 /* HomePage */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BA682A702CF65B820065E683 /* Exceptions for "HomePage" folder in "PawPal" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFAFFCF29BD0FD1A9661B58 /* Pods_PawPal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

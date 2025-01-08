@@ -5,7 +5,6 @@ target 'PawPal' do
   
   # Pods for PawPal
   pod 'FirebaseAuth'
-  pod 'FirebaseAuthInternal'
   pod 'GTMSessionFetcher/Core'
   pod 'GoogleSignIn'
   pod 'FirebaseFirestore'

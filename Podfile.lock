@@ -1337,6 +1337,7 @@ DEPENDENCIES:
   - FirebaseAuth
   - FirebaseFirestore
   - GoogleSignIn
+  - GTMSessionFetcher/Core
 
 SPEC REPOS:
   trunk:
@@ -1389,6 +1390,6 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
 
-PODFILE CHECKSUM: aecc9379d9c684ca93ef7933d5a20fb1281c5d7d
+PODFILE CHECKSUM: 4fee2849c19709c1b4c8f8de197b8f38f6b60b28
 
 COCOAPODS: 1.16.2
